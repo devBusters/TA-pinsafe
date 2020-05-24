@@ -296,8 +296,8 @@ jobs:
     docker:
       - image: circleci/python:3.7
     steps:
-      - setup_remote_docker:
-          docker_layer_caching: false
+#      - setup_remote_docker:
+#          docker_layer_caching: false
       - attach_workspace:
           at: /tmp/workspace
       - checkout
@@ -314,8 +314,8 @@ jobs:
     docker:
       - image: circleci/python:3.7
     steps:
-      - setup_remote_docker:
-          docker_layer_caching: false
+#      - setup_remote_docker:
+#          docker_layer_caching: false
       - attach_workspace:
           at: /tmp/workspace
       - checkout
