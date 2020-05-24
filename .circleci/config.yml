@@ -202,8 +202,8 @@ orbs:
           - checkout
           - run: git submodule sync
           - run: git submodule update --init
-          - setup_remote_docker:
-              docker_layer_caching: true
+#          - setup_remote_docker:
+#              docker_layer_caching: true
           - test_aio:
               splunk_version: <<parameters.splunk_version>>
           - store_artifacts:
